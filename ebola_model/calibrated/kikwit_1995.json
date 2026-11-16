@@ -1,0 +1,41 @@
+{
+ "name": "Ebola, calibrated to Kikwit 1995",
+ "status": "Calibrated to one outbreak. Not reviewed by an epidemiologist. Scenario estimates, not forecasts.",
+ "parameters": {
+  "population": 200000,
+  "r0": 2.6278187393634354,
+  "share_community": 0.18518518518518517,
+  "share_hospital": 0.14814814814814814,
+  "share_funeral": 0.6666666666666666,
+  "incubation": 8.5,
+  "onset_to_admission": 5.0,
+  "onset_to_death": 9.3,
+  "onset_to_recovery": 13.0,
+  "burial_delay": 2.0,
+  "share_hospitalised": 0.8,
+  "fatality_home": 0.81,
+  "fatality_hospital": 0.81,
+  "reporting_fraction": 0.926984126984127
+ },
+ "response_as_observed": {
+  "start_day": 118,
+  "ramp_days": 14.0,
+  "community": 0.055281377794616976,
+  "hospital": 0.055281377794616976,
+  "funeral": 0.055281377794616976
+ },
+ "initial_infectious": 0.08282005228779032,
+ "day_zero": "1995-01-06",
+ "calibration": {
+  "r0_ci95": [
+   2.329817477697472,
+   3.0073312613436953
+  ],
+  "r0_range_across_assumptions": [
+   1.9080444703050035,
+   3.21387651314669
+  ],
+  "data": "Khan et al. 1999, J Infect Dis 179:S76-S86",
+  "method": "Maximum likelihood on weekly onsets, negative binomial"
+ }
+}
